@@ -1,0 +1,38 @@
+{
+    "manifest_version" : 2,
+    "name" : "Cursecatcher",
+    "description" : "Remove the Curse cruft from MTG Salvation",
+    "version" : "1.0",
+    "icons" : {
+        "48" : "img/icon-48.png",
+        "128" : "img/icon-128.png"
+    },
+    "permissions" : [
+        "storage"
+    ],
+    "content_scripts" : [
+        {
+            "matches" : [
+                "*://*.mtgsalvation.com/*"
+            ],
+            "css" : [
+                "css/curse.css"
+            ],
+            "js" : [
+                "lib/jquery-2.1.0.min.js",
+                "js/curse.js"
+            ],
+            "run_at" : "document_start"
+        },
+        {
+            "matches" : [
+                "*://*.mtgsalvation.com/my-preferences"
+            ],
+            "js" : [
+                "lib/jquery-2.1.0.min.js",
+                "js/prefs.js"
+            ],
+            "run_at" : "document_start"
+        }
+    ]
+}
