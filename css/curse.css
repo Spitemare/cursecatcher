@@ -1,19 +1,12 @@
-#footer {
-    height: 30px !important;
+.netbar .netbar-left {
+	display: none !important;
 }
 
-.t-footer-wrapper {
-    padding: 0 !important;
+#footer, #footer-push {
+	display: none !important;
 }
 
-#site-main {
-    margin-bottom: 0 !important;
-}
-
-.t-netbar-curseInfo, .p-feedback,
-footer div[class^='t-footer-curse'],
-#footer-push,
-#reply .help-block {
-    display: none !important;
+.ad-container {
+	display: none !important;
 }
 
